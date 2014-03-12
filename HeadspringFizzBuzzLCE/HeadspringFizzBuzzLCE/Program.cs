@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FizzBuzzLib;
 
 namespace HeadspringFizzBuzzLCE
@@ -11,9 +7,13 @@ namespace HeadspringFizzBuzzLCE
 	{
 		static void Main(string[] args)
 		{
-
 			var output = new FizzBuzz().DoTheFizzBuzz(100, 200);
-			Console.WriteLine(output);
+
+			foreach (string conversion in output)
+			{
+				Console.WriteLine(conversion);
+			}
+
 			Console.ReadLine();
 		}
 	}

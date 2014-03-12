@@ -1,4 +1,5 @@
-﻿using FizzBuzzLib;
+﻿using System.Linq;
+using FizzBuzzLib;
 using SpecUnit;
 
 namespace FizzBuzzSpecs
@@ -16,9 +17,9 @@ namespace FizzBuzzSpecs
 		[Observation]
 		public void it_should_print_fizz_for_3()
 		{
-			output = fizzBuzz.DoTheFizzBuzz(3, 3);
+			output = fizzBuzz.DoTheFizzBuzz(3, 3).First();
 
-			output.ShouldEqual("fizz\n");
+			output.ShouldEqual("fizz");
 		}
 	}
 
